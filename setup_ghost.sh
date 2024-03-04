@@ -2,6 +2,8 @@
 
 echo "Step 1: Installing Docker..."
 # Install Docker
+sudo apt update && sudo apt upgrade -y
+sudo apt install nano htop -y
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 echo "Docker installed successfully!"
@@ -19,12 +21,12 @@ echo "ghost-dev.yaml file downloaded successfully!"
 
 echo "Step 4: Executing Docker Compose..."
 # Execute Docker Compose
-docker-compose -f ghost-dev.yaml up -d
+sudo docker compose -f ghost-dev.yaml up -d
 echo "Docker Compose executed successfully!"
 
 echo "Step 5: Waiting for Ghost container to start..."
 # Wait for Ghost container to start
-while ! docker ps --filter "name=ghost" --format '{{.Names}}' | grep -q "ghost"; do
+while ! sudo docker ps --filter "name=ghost" --format '{{.Names}}' | grep -q "ghost"; do
     sleep 2
 done
 

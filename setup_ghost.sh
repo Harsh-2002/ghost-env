@@ -32,3 +32,4 @@ done
 
 # Print the URL
 echo "Your Ghost development environment is live at http://localhost:8040"
+echo "The Ghost content directory will be located at /home/your-username/ghost-env/ghost-dev/ghost/content"

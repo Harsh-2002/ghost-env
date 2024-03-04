@@ -2,6 +2,7 @@ version: '3.7'
 
 services:
   ghost:
+    container_name: ghost
     image: ghost:latest
     restart: always
     ports:

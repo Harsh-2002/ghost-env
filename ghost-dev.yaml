@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  ghost:
+    image: ghost:latest
+    restart: always
+    ports:
+      - 8040:2368
+    environment:
+      NODE_ENV: development
+      url: http://localhost:8040
+    volumes: 
+      - ./ghost/content:/var/lib/ghost/content

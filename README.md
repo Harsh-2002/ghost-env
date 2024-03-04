@@ -2,11 +2,6 @@
 
 This repository contains a script to automate the setup of a Ghost development environment using Docker.
 
-## Prerequisites
-
-- [Docker](https://docs.docker.com/get-docker/): Make sure Docker is installed on your system.
-- [Git](https://git-scm.com/): Ensure Git is installed to clone this repository.
-
 ## Quick Start
 
 1. Install Git on your system:

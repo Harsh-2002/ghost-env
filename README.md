@@ -1,4 +1,3 @@
-```markdown
 # Ghost Development Environment Setup
 
 This repository contains a script to automate the setup of a Ghost development environment using Docker.

@@ -6,7 +6,7 @@ This repository contains a script to automate the setup of a Ghost development e
 
 1. Install Git on your system:
 
-   - On Ubuntu/Debian:
+   On Ubuntu/Debian:
 
      ```bash
      sudo apt-get update
